@@ -1,0 +1,41 @@
+*{
+    margin:0px;
+    font-family:Helvetica;
+}
+.flexbox-container{
+    display:flex;
+    justify-content: space-around;
+flex-wrap: wrap;
+    align-items: center;
+   flex-direction: column;
+    
+}
+.description{
+    font-size:1em;
+    text-align:left;
+}
+.link-card{
+   padding: 1em;
+    box-shadow:black 10px 10px 10px;
+    border-radius:1em;
+    background-color: rgb(56, 56, 56);
+    margin: 2em;
+} 
+ 
+.link-item{
+    font-family:Helvetica;
+    font-weight: 600;
+    text-decoration:none;
+    font-size:1em;
+    color:white;
+
+}
+.back-button{
+     box-shadow: black 0.3em 1em 1em;
+     padding: 2rem;
+ font-size: 1.2em;
+ font-weight: 600;
+ text-decoration: none;
+ color: black;
+
+}

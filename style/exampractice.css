@@ -1,0 +1,81 @@
+*{
+    margin:0px;
+    font-family:  Helvetica;
+}
+
+.container{
+   
+grid-template-columns:1fr;
+grid-template-rows: 0.01fr 0.5fr 0.5fr;
+
+grid-template-areas: 
+"nav nav nav"
+"main main aside"
+
+;
+}
+.excercise-container{
+grid-area:main;
+}
+
+
+.menu{
+    background-color:rgb(150, 3, 26);
+    
+    grid-area:nav;
+}
+
+.menu-button{
+font-size:40em;
+    padding: 1em;
+    font-family:Helvetica;
+   margin-right:1em;
+   font-weight: 600;
+   color:white;
+    border:none;
+    background-color: rgb(201, 8, 8);
+}
+:hover.menu-button{
+    background-color: rgb(253, 253, 253);
+}
+.sidebar{
+    grid-area:aside;
+}
+.prompt{
+    margin:1em;
+    padding: 1em;
+    font-family: Helvetica;
+    box-shadow: black 1px 1px 1px 1px;
+    font-size:2em;
+    border-radius: 1em;
+}
+.svg-container{
+    background-color: grey;
+}
+.CardOption{
+    box-shadow: black 1px 2px 5px;
+    background-color: rgb(255, 255, 255);
+    padding: 1em;
+    margin:2vw 1vw;
+    border-radius: 1vw;
+   
+}
+
+input[type=radio] {
+    margin: 1em 1em 1em 0;
+    transform: scale(3, 3);
+    -moz-transform: scale(3, 3);
+    -ms-transform: scale(3, 3);
+    -webkit-transform: scale(3, 3);
+    -o-transform: scale(3, 3);}
+    
+.option-text{
+    font-size:50px;
+    margin-left: 1em;
+}
+.note{
+    display: none;
+}
+.next-button{
+    padding: 1em;
+}

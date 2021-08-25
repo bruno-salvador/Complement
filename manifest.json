@@ -1,0 +1,14 @@
+{
+
+"name":"Complement",
+"short_name":"Complemath",
+"start_url":"/",
+"background":"#8876e3",
+"theme_color":"#584d91",
+"display":"standalone",
+"icons":[{
+"src":"icon.jpg",
+"sizes":"260x260",
+"type":"image/png"
+}]
+}

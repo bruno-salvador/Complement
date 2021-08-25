@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+<!--<link rel="stylesheet" href="../style/exampractice.css"> -->
+<link rel="apple-touch-icon" sizes="180x180" href="../favicon/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="../favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="../favicon/favicon-16x16.png">
+
+<link rel="manifest" href="/site.webmanifest">
+<link rel="mask-icon" href="../favicon/safari-pinned-tab.svg" color="#5bbad5">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="theme-color" content="#ffffff">
+
+
+    </head>
+    <body>
+        
+       <div class="container">
+    <nav class="menu">
+        <button class="menu-button"><a onclick="start()">1er parcial</a></button>
+        <button class="menu-button"><a>2do parcial</a></button>
+        <button class="menu-button"><a>Final</a></button>
+        <button class="menu-button"><a href="../index.html">Inicio</a></button>
+       
+    </nav>
+   
+    </aside>
+    <div class="countdown container">
+        <span class="hours">1</span>
+        <span class="minutes">2</span>
+        <span class="seconds">3</span>
+    </div>
+    <main class="excercise-container">
+        <p class="prompt"></p>
+        <div class="svg-container">    <img class="imageprompt"src=""></div>
+    
+        <form action="" method="get" name="quiz">
+            <div class="CardOption "> 
+                <input type="radio" name="option" id="option1"  value=>
+                <label for="option1" class="option1 option-text"></label>
+                
+            </div>
+                <div class="CardOption">
+                    <input type="radio" name="option" id="option2" value=>
+                    <label for="option2" class="option2 option-text"></label>
+                </div>
+                <div class="CardOption">
+                    <input type="radio" name="option" id="option3" value=>
+                    <label for="option3" class="option3 option-text"></label>
+                </div>
+                <div class="CardOption">
+                    <input type="radio" name="option" id="option4" value=>
+                    <label for="option4" class="option4 option-text"></label>
+                </div>
+                <input type="button" value="siguiente" onclick="questionChecker()" class="next-button">
+        </form>
+        <p class="note"></p>
+    </main>
+</div>
+    </body>
+    <script src="../scripts/examsimulator.js"></script>
+    
+</html>
