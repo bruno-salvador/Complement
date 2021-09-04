@@ -98,5 +98,3 @@ let timer=()=>{
   console.log("timer")
 }
 let countdown =setInterval( timer, 1000);
-
-countdown();
