@@ -13,10 +13,7 @@ let answer2 = document.forms["quiz"]["option2"];
 let answer3 = document.forms["quiz"]["option3"];
 let answer4 = document.forms["quiz"]["option4"];
 let imageSvg = document.querySelector(".imageprompt");
-let point = document.querySelector(".note");
-let hours = document.querySelector(".hours");
-let minutes = document.querySelector(".minutes");
-let seconds = document.querySelector(".seconds");
+
 hours.innerHTML = 0;
 minutes.innerHTML = 0;
 seconds.innerHTML = 2;
