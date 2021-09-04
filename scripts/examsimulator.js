@@ -30,7 +30,7 @@ hideUI();
 /*constructor de preguntas*/
 class question {
   constructor(
-    prompt, option1, option2, option3, option4, 
+    prompt, option1, option2, option3, option4,
     answer1, answer2, answer3, answer4, image, points, category) {
     this.prompt = prompt;
     this.option1 = option1 = {
@@ -63,14 +63,13 @@ class question {
   return currentQuestion = object;
 }
 */function excercisePlacer(
-  {prompt,optionOne,optionTwo,optionThree,optionFour,
-    option1,option2,option3,option4}) 
-    {
-  prompt.innerHTML =prompt;
-  optionOne.innerHTML =option1.option;
+  { prompt, optionOne, optionTwo, optionThree, optionFour,
+    option1, option2, option3, option4 }) {
+  prompt.innerHTML = prompt;
+  optionOne.innerHTML = option1.option;
   answer1.value = option1.answer;
   optionTwo.innerHTML = option2.option;
-  answer2.value =option2.answer;
+  answer2.value = option2.answer;
   optionThree.innerHTML = option3.option;
   answer3.value = option3.answer;
   optionFour.innerHTML = option;
@@ -78,23 +77,24 @@ class question {
   point.innerHTML = object.points;
   return currentQuestion = object;
 
-function start() {
-  excerciseContainer.style.display = "block";
+  function start() {
+    excerciseContainer.style.display = "block";
 
-}
-
-console.log(document.querySelector('input[name="option"]:checked'));
-function questionChecker() {
-  let selectedInput = document.querySelector('input[name="option"]:checked').value;
-  let input = selectedInput.toLowerCase() == 'true' ? true : false;
-  if (input == true) {
-    console.log("correct");
-    calification = +point.innerHTML;
-    console.log(point.innerHTML)
-    console.log(`your total calification is ${calification}`);
   }
-  else {
-    console.log("false")
 
+  console.log(document.querySelector('input[name="option"]:checked'));
+  function questionChecker() {
+    let selectedInput = document.querySelector('input[name="option"]:checked').value;
+    let input = selectedInput.toLowerCase() == 'true' ? true : false;
+    if (input == true) {
+      console.log("correct");
+      calification = +point.innerHTML;
+      console.log(point.innerHTML)
+      console.log(`your total calification is ${calification}`);
+    }
+    else {
+      console.log("false")
+
+    }
   }
 }
