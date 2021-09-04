@@ -8,14 +8,14 @@
     .aside-card{
         background-color:blueviolet;
     }
-.grid{
+.menu-grid{
     margin-top: 10%;
     margin-left:0;
     display: grid;
 
-    column-gap: 100px;
-    grid-template-columns:100px 100px 100px;
-    grid-template-rows: 100px 100px 100px;
+    gap:3em;
+    grid-template-columns:repeat(3,1fr);
+    grid-template-rows:repeat(3,1fr);
 }
 .grid-container 
 {

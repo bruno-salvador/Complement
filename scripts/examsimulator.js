@@ -20,7 +20,6 @@ let seconds = document.querySelector(".seconds");
 hours.innerHTML = 0;
 minutes.innerHTML = 0;
 seconds.innerHTML = 2;
-let books = [{ name: "a" }, { name: "b" }, { name: "c" }];
 
 
 function hideUI() {
@@ -30,7 +29,9 @@ hideUI();
 
 /*constructor de preguntas*/
 class question {
-  constructor(prompt, option1, option2, option3, option4, answer1, answer2, answer3, answer4, image, points, category) {
+  constructor(
+    prompt, option1, option2, option3, option4, 
+    answer1, answer2, answer3, answer4, image, points, category) {
     this.prompt = prompt;
     this.option1 = option1 = {
       option: option1, answer: answer1,
@@ -48,7 +49,7 @@ class question {
 
 }
 
-function excercisePlacer(object) {
+/*function excercisePlacer(object) {
   prompt.innerHTML = object.prompt;
   optionOne.innerHTML = object.option1.option;
   answer1.value = object.option1.answer;
@@ -61,12 +62,27 @@ function excercisePlacer(object) {
   point.innerHTML = object.points;
   return currentQuestion = object;
 }
+*/function excercisePlacer(
+  {prompt,optionOne,optionTwo,optionThree,optionFour,
+    option1,option2,option3,option4}) 
+    {
+  prompt.innerHTML =prompt;
+  optionOne.innerHTML =option1.option;
+  answer1.value = option1.answer;
+  optionTwo.innerHTML = option2.option;
+  answer2.value =option2.answer;
+  optionThree.innerHTML = option3.option;
+  answer3.value = option3.answer;
+  optionFour.innerHTML = option;
+  answer4.value = option4.answer;
+  point.innerHTML = object.points;
+  return currentQuestion = object;
+
 function start() {
   excerciseContainer.style.display = "block";
 
 }
 
-/* let question1=new question("cuanto es 2+2",1,3,4,6,false,false,true,false,"");*/
 console.log(document.querySelector('input[name="option"]:checked'));
 function questionChecker() {
   let selectedInput = document.querySelector('input[name="option"]:checked').value;
@@ -82,19 +98,3 @@ function questionChecker() {
 
   }
 }
-let timer=()=>{
- 
-
-  if( seconds.innerHTML == 0 & hours.innerHTML == 0 & minutes.innerHTML == 0 ) {
-    clearInterval(countdown);
-    console.log("se te acabo el tiempo perri ");
-  
-  
-    
-  }
-  else{
-
-  --seconds.innerHTML;}
-  console.log("timer")
-}
-let countdown =setInterval( timer, 1000);
